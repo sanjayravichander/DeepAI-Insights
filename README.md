@@ -5,30 +5,30 @@ DeepDive AI is a Retrieval-Augmented Generation (RAG) application designed to he
 This project is particularly useful for researchers, students, and AI enthusiasts who want to quickly understand and navigate scientific literature.
 
 ## Features
-## Paper Upload: Users can upload AI research papers in PDF format.
+Paper Upload: Users can upload AI research papers in PDF format.
 
-## Query-Based Retrieval: The application uses semantic search to retrieve specific sections or paragraphs related to user queries.
+Query-Based Retrieval: The application uses semantic search to retrieve specific sections or paragraphs related to user queries.
 
-## Summary Generation: Generates concise summaries of key sections (e.g., abstract, methodology, results).
+Summary Generation: Generates concise summaries of key sections (e.g., abstract, methodology, results).
 
-## Interactive Q&A: Provides answers to natural language questions based on the paper's content.
+Interactive Q&A: Provides answers to natural language questions based on the paper's content.
 
-## Citation Assistance: Offers citation suggestions for specific sections or ideas in the paper.
+Citation Assistance: Offers citation suggestions for specific sections or ideas in the paper.
 
-## Generative AI Integration: Uses a Generative AI model (instead of OpenAI) to generate responses.
+Generative AI Integration: Uses a Generative AI model (instead of OpenAI) to generate responses.
 
 ## Tech Stack
 ## Text Extraction: PyPDF2
 
-## Vectorization: Sentence Transformers (all-MiniLM-L6-v2)
+ Vectorization: Sentence Transformers (all-MiniLM-L6-v2)
 
-## Vector Database: FAISS (for efficient similarity search)
+ Vector Database: FAISS (for efficient similarity search)
 
-## Generative AI: Custom Generative AI model (e.g., Hugging Face Transformers, GPT-J, or similar)
+ Generative AI: Custom Generative AI model (e.g., Hugging Face Transformers, GPT-J, or similar)
 
-## Frontend: Streamlit
+ Frontend: Streamlit
 
-## Deployment: Streamlit Cloud
+ Deployment: Streamlit Cloud
 
 ## Installation
 ## To set up the project locally, follow these steps:
@@ -55,16 +55,16 @@ google-generativeai
 GENERATIVE_AI_API_KEY=your_generative_ai_api_key
 
 ## Run the Application:
-## Start the Streamlit application:
-## streamlit run app.py
+Start the Streamlit application:
+streamlit run app.py
 
 ## Acknowledgments
-## Sentence Transformers for semantic search.
+Sentence Transformers for semantic search.
 
-## FAISS for efficient vector similarity search.
+FAISS for efficient vector similarity search.
 
-## Hugging Face Transformers for Generative AI integration.
+Hugging Face Transformers for Generative AI integration.
 
-## Streamlit for the user interface.
+Streamlit for the user interface.
 
 
