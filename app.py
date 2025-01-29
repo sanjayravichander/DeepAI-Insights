@@ -6,10 +6,10 @@ import faiss
 import numpy as np
 import os
 
-# Configure Google Gemini API (Replace with your API key)
+# Configuring Google Gemini API 
 genai.configure(api_key="AIzaSyCqQ3_Lhb7Hamp1ONCL7ViIF2AIlE-e7dk")
 
-# Initialize Sentence Transformer model for embedding
+# Initializing Sentence Transformer model for embedding
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Function to extract text from PDF
@@ -54,7 +54,7 @@ def generate_response(query, relevant_chunks):
 # Streamlit UI
 st.title("📄 DeepDive AI - Research Paper Insights")
 
-# File upload
+# File uploading
 uploaded_file = st.file_uploader("📂 Upload a research paper (PDF)", type="pdf")
 
 if uploaded_file is not None:
@@ -66,7 +66,7 @@ if uploaded_file is not None:
     with st.spinner("🔄 Chunking text..."):
         chunks = chunk_text(text)
 
-    # Create FAISS index
+    # Creating FAISS index
     with st.spinner("⚡ Creating semantic index..."):
         index, embeddings = create_faiss_index(chunks)
 
